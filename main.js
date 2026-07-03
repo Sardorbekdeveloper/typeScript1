@@ -29,4 +29,32 @@ function logLength(item) {
 }
 console.log(logLength("salom"));
 console.log(logLength([1, 2, 3, 4]));
+//6-task
+function findMin(arr) {
+    let min = arr[0];
+    for (const num of arr) {
+        if (num < min)
+            min = num;
+    }
+    return min;
+}
+//console.log(findMin([-1, 0, 8, 7, 563]))
+// 7-task
+function merge(obj1, obj2) {
+    return { ...obj1, ...obj2 };
+}
+const person = merge({ name: "Otabek" }, { age: 40 });
+console.log(person.name, person.age);
+// 11-task
+function processValue(value) {
+    console.log("Qiymat: ", value);
+    return value;
+}
+console.log(processValue(42));
+console.log(processValue("salom"));
+//12-task
+function removeDuplicates(arr) {
+    return Array.from(new Set(arr));
+}
+console.log(removeDuplicates([1, 2, 2, 2, 2, 2, 2, 3, 3, 3]));
 //# sourceMappingURL=main.js.map
